@@ -70,6 +70,8 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATES_DIR = BASE_DIR / 'templates'
+
 WSGI_APPLICATION = 'blogicum.wsgi.application'
 
 
@@ -126,6 +128,9 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # Media files
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
+
+# Fixtures
+FIXTURE_DIRS = [BASE_DIR.parent]
 
 # Email backend
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
